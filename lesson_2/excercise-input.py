@@ -8,7 +8,7 @@ my_name = input("What is your name?: ")
 print(my_name)
 
 # 2. Input a number and assign it to a variable, print the value doubled
-your_age = input("How old?: ")
+your_age = int(input("How old?: "))
 print(f"Your age is {int(your_age)*2}")
 
 # 3. Input a string i.e `hello` and assign it to a variable, print the string repeated `hellohello`
