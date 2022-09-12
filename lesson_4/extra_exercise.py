@@ -104,7 +104,7 @@ print(result)
 # My_basket = ['apple', 'orange', 'pear', 'banana', 'grapes', 'apple',
 #            'orange', 'pear']
 
-
+"""
 fruits = ['apple', 'orange', 'pear', 'banana', 'grapes']
 basket = []
 amount = int(input("How many fruits fit in your basket?: "))
@@ -112,3 +112,28 @@ amount = int(input("How many fruits fit in your basket?: "))
 for i in range(amount):
     basket.append(fruits[i % len(fruits)])
 print(basket)
+
+"""
+
+# 8. Skriv ett program som använder sig av nästlade while-loopar för att skriva ut alla primtal
+# som är mindre än 100.
+# Vägledning: Primtal är ett tal som är större än 1 och som inte går att dela jämnt med
+# något tal annat än sig själv och 1. Se wikipedia för hur man kan beräkna vad som är ett
+# primtal: https: // sv.wikipedia.org/wiki/Primtal
+# Exempel på primtal är 2, 3, 5, 7, 11, 13, 17 och 19
+# 4, 6, 8, 9, 10, 12, 14, 15, 18 och 20 är inte primtal(eftersom t.ex. 20 / 5=4, 14/7=2 osv)
+
+
+i = 1
+while i < 100:
+    i += 1
+    j = 2
+    is_prime = True
+    while j < i:
+        # print(f"i={i} is divisible by j={j}: {i % j == 0}")
+        if i % j == 0:
+            is_prime = False
+            break
+        j += 1
+    if is_prime:
+        print(f"i={i} is a prime")
