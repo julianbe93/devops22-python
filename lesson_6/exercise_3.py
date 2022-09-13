@@ -13,11 +13,19 @@ alphabet_string = string.ascii_lowercase
 alphabet = list(alphabet_string)
 print(alphabet)
 
+# Martin
+# list(string.ascii_lowercase)
+
 # 2.
 
 stack = []
-stack.append(alphabet[0:27])
-print(stack)
+for letter in string.ascii_lowercase:
+    stack.append(letter)
 
-stack.pop()
-print(f"{stack}")
+# 3.
+
+my_string = ""
+while len(stack) > 0:
+    my_string += stack.pop()
+
+print(my_string)

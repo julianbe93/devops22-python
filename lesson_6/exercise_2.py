@@ -26,7 +26,7 @@ print(c.most_common(3))
 
 # 4. Print the least popular name[s]
 
-print(c.most_common()[:3:-1])
+print(c.most_common()[-1])
 
 
 # 5. Print all unique names
