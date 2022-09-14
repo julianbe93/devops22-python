@@ -51,8 +51,8 @@ reverse_alphabet()
 
 # 3.1 Create a function that prints `hello name` with name as a parameter
 
-def greeting(name, phrase="hello"):
-    print(f'{phrase} {name}')
+def greeting(name):
+    print(f'Hello {name}')
 
 
 greeting("Julian")
@@ -77,9 +77,8 @@ capital_string("hello")
 
 # numbers()
 
-def numbers(stop, start=1):
-    for x in range(start, stop):
-        print(x)
+def numbers(start=1, stop=11):
+    print(list(range(start, stop)))
 
 
-numbers(11)
+numbers()
