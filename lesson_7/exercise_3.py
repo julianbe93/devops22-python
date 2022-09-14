@@ -19,6 +19,7 @@ def tuple(x, y):
 
 tuple(1, 2)
 
+
 # 3. Create a function that returns a boolean value
 
 
@@ -75,3 +76,13 @@ def multiple_time(word="Hello", repeat=3):
 
 
 multiple_time()
+
+
+# Martin's solution
+
+# def echo(word, repeat):
+#     for r in range(repeat):
+#         print(word)
+
+
+# echo("hello", 3)
